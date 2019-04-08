@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 映射文件，映射到对应的SQL接口 -->
+<mapper namespace="com.hyk.mapper.CityMapper">
+
+    <select id="getCityById" resultType="City">
+        select name,code_f from CITY where id = #{id,jdbcType=DECIMAL}
+    </select>
+
+</mapper>
